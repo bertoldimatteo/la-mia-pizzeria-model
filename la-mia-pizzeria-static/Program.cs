@@ -24,8 +24,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Pizza}/{action=Index}/{id?}");
 
 app.Run();
-
-Pizza pizza1 = new Pizza("Pizza Margherita", "Pizza margherita classica", 10);
